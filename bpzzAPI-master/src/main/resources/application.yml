@@ -1,0 +1,18 @@
+#configuracion de acceso a BD
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update #create-drop 
+  #estrategia de generacion de base de datos
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/api?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: mysql
+    
+    
+    
+server:
+  port: 8090  
